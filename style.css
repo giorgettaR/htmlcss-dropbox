@@ -40,6 +40,10 @@
         width: calc(100% / 3);
     }
 
+    .col-5 {
+        width: calc(100% / 5);
+    }
+
     .col-40 {
         width: 40%;
     }
@@ -323,6 +327,35 @@
 
             /* STYLE faq */
 
+            footer {
+                background-color: rgba(0,0,0,255);
+                color: white;
+            }
+
+            footer .container {
+                width: 70vw;
+            }
+
+            footer .container .row {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            footer .container .nav, 
+            footer .container .language {
+                padding: 20px;
+            }
+
+            footer .container .nav ul :first-child {
+                font-size: 20px;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+
+            footer .container .nav ul :not(:first-child) {
+                font-size: 14px;
+                padding-top: 10px;
+            }
 
 
 /* DEBUG */
