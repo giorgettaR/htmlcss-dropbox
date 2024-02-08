@@ -27,7 +27,17 @@ ul {
     flex-direction: row;
 }
 
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
 /* STYLE */
+
+.col-3 {
+    width: calc(100% / 3);
+}
 
 .col-40 {
     width: 40%;
@@ -116,19 +126,82 @@ ul {
         .hero .text >:not(:first-child) {
             margin-top: 20px;
         }
-        
-        .hero img {
-            display: block;
-            margin: auto;
-            width: 100%;
-        }
 
         /* STYLE offer */
 
-        .offer h2 {
+        .offer .row >h2 {
             font-size: 60px;
             padding: 50px 0;
         }
+
+        .offer .radio {
+            padding: 10px 0;
+        }
+
+        .plans.flex {
+            align-items: stretch;
+        }
+
+        .offer {
+            flex-direction: row;
+        }
+
+        .offer .card {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .offer .card >* {
+            border: solid grey 1px;
+            padding: 15px;
+        }
+
+        .offer .card .target {
+            text-align: center;
+        }
+
+        .offer .card .main >*:not(.sharpened) {
+            padding: 7px 0;
+        }
+
+        .offer .card h1 {
+            font-size: 28px;
+        }
+
+        .offer .card h2 {
+            font-size: 18px;
+        }
+
+        .offer .card .main button {
+            margin: auto;
+        }
+
+        .offer .card .highlights ul {
+            list-style-type: circle;
+            list-style: inside;
+        }
+
+        .offer .enterprise .card .main {
+            position: relative;
+        }
+
+        .offer .enterprise .card button {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .offer .partner .text {
+            padding: 15px;
+        }
+
+        .offer .partner .text .div {
+            padding: 20px 0;
+        }
+
+
+
 
 
 /* DEBUG */
