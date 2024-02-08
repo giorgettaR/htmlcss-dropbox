@@ -1,0 +1,142 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL SETTINGS */
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container >.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* STYLE */
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.sharpened {
+    display: block;
+    padding: 0.5em 0.5em;
+    color: white;
+    background-color: blue;
+    width: fit-content;
+}
+
+    /* STYLE HEADER */
+
+    header .container {
+        height: 60px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header .container >.row {
+        height: 100%;
+    }
+
+    header .left >*,
+    header .right >:not(.sharpened) {
+        padding: 2px;
+    }
+
+    header .left,
+    header .right {
+        align-items: center;
+    }
+
+    header .right {
+        justify-content: end;
+    }
+
+    header img {
+        display: block;
+        margin: auto;
+        height: 30px;
+    }
+
+    /* STYLE MAIN */
+
+    main .container >.row {
+        width: 70vw;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+        /* STYLE hero */
+
+        section.hero {
+            background-color: rgba(180,208,231,255);
+        }
+
+        .container.hero {
+            width: 85vw;
+            padding-top: 20px;
+        }
+
+        .container.hero >.row {
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            padding: 50px 0;
+        }
+
+        .hero .text {
+            width: 40%;
+        }
+
+        .hero .text >:not(:first-child) {
+            margin-top: 20px;
+        }
+        
+        .hero img {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        /* STYLE offer */
+
+        .offer h2 {
+            font-size: 60px;
+            padding: 50px 0;
+        }
+
+
+/* DEBUG */
+
+.debug .container .row >* {
+    border: dashed black 1px;
+}
+
+.debug .flex >* {
+    border: dashed black 1px;
+}
