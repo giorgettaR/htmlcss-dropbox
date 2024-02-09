@@ -40,12 +40,20 @@
 
 /* STYLE */
 
+    .title {
+        font-weight: bold;
+    }
+
     .col-3 {
         width: calc(100% / 3);
     }
 
     .col-5 {
         width: calc(100% / 5);
+    }
+
+    .col-30 {
+        width: 30%;
     }
 
     .col-40 {
@@ -123,7 +131,6 @@
 
             .container.hero {
                 width: 80vw;
-                /* padding-top: 20px; */
             }
 
             .container.hero >.row {
@@ -132,7 +139,6 @@
 
             .hero .title {
                 font-size: 80px;
-                font-weight: bold;
                 padding-bottom: 50px;
             }
 
@@ -152,10 +158,8 @@
                 flex-direction: column;
             }
 
-            .offer >.title {
+            .offer .row >.title {
                 font-size: 40px;
-                font-weight: bold;
-                padding-bottom: 50px;
             }
 
             .offer .radio {
@@ -165,131 +169,124 @@
             .plans.flex {
                 align-items: stretch;
                 flex-wrap: wrap;
+                width: calc(100% + 20px);
+                align-self: end;
             }
 
-            .offer .card {
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-            }
+            /* STYLE plans */
 
-            .offer .card >* {
-                border: solid grey 1px;
-                padding: 15px;
-            }
+                .offer .card {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                }
 
-            .offer .card .target {
-                text-align: center;
-            }
+                .offer .card >* {
+                    border: solid grey 1px;
+                    padding: 15px;
+                }
 
-            .offer .card .info {
-                flex-grow: 2;
-            }
+                .offer .card .target {
+                    text-align: center;
+                }
 
-            .offer .card .info >*:not(.sharpened) {
-                padding: 20px 10px;
-            }
+                .offer .card .info {
+                    flex-grow: 2;
+                }
 
-            .offer .card .info .head {
-                line-height: 30px;
-            }
+                .offer .card .info >*:not(.sharpened) {
+                    padding: 20px 10px;
+                }
 
-            .offer .card .info .type {
-                font-size: 28px;
-            }
+                .offer .card .info .head {
+                    line-height: 30px;
+                }
 
-            .offer .card .info .type,
-            .offer .card .info .price {
-                font-weight: bold;
-            }
+                .offer .card .info .type {
+                    font-size: 28px;
+                }
 
-            .offer .card .info .cadency {
-                color: grey;
-            }
+                .offer .card .info .type,
+                .offer .card .info .price {
+                    font-weight: bold;
+                }
 
-            .offer .card .info .fa-ul {
-                margin-left: 2em;
-            }
+                .offer .card .info .cadency {
+                    color: grey;
+                }
 
-            .offer .card .info .fa-ul li {
-                padding: 10px 0;
-            }
+                .offer .card .info .fa-ul {
+                    margin-left: 2em;
+                }
 
-            .offer .card .info .try {
-                width: 85%;
-                margin: auto;
-            }
+                .offer .card .info .fa-ul li {
+                    padding: 10px 0;
+                }
 
-            .offer .card .info .buy {
-                padding: 30px 10px;
-            }
+                .offer .card .info .try {
+                    width: 85%;
+                    margin: auto;
+                }
 
-            .offer .plans .card .info hr {
-                width: 30%;
-                padding-left: 50px;
-                padding: 0;
-            }
+                .offer .card .info .buy {
+                    padding: 30px 10px;
+                }
 
-            .offer .plans .card .highlights div {
-                margin: 20px 0px;
-                font-weight: bold;
-            }
+                .offer .plans .card .info hr {
+                    width: 30%;
+                    padding-left: 50px;
+                    padding: 0;
+                }
 
-            .offer .enterprise.card {
-                width: 100%;
-            }
+                .offer .plans .card .highlights div {
+                    margin: 20px 0px;
+                    font-weight: bold;
+                }
 
-            .offer .enterprise.card .info {
-                line-height: 30px;
-                position: relative;
-            }
+                .offer .enterprise.card {
+                    width: 100%;
+                }
 
-            .offer .enterprise.card button {
-                position: absolute;
-                right: 20px;
-                top: 20px;
-            }
+                .offer .enterprise.card .info {
+                    line-height: 30px;
+                    position: relative;
+                }
 
-            .offer .partner {
-                padding-top: 150px;
-            }
+                .offer .enterprise.card button {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
 
-            .offer .partner .text {
-                padding: 40px;
-            }
+            /* STYLE partner */
 
-            .offer .partner .text .title {
-                font-size: 28px;
-            }
+                .offer .partner {
+                    padding-top: 150px;
+                }
 
-            .offer .partner .text .hook {
-                padding: 30px 0;
-            }
+                .offer .partner .text {
+                    padding: 40px;
+                }
 
-            .offer .partner .text button {
-                background-color: white;
-                color: black;
-                width: 50%;
-            }
+                .offer .partner .text .title {
+                    font-size: 28px;
+                }
 
-/* __________________________________________________________ */
+                .offer .partner .text .hook {
+                    padding: 30px 0;
+                }
 
-            
-
-
-
-
-x          
-
-            
-            
-            
+                .offer .partner .text button {
+                    background-color: white;
+                    color: black;
+                    width: 50%;
+                }
 
         /* STYLE features */
 
-            .container.features h1 {
-                font-size: 50px;
-                padding: 50px 0;
+            .container.features >.title {
+                font-size: 40px;
+                padding-bottom: 50px;
             }
 
             .container.features >.row {
@@ -300,23 +297,33 @@ x
                 flex-direction: column;
             }
 
-            .features .row .feature >*:not(h1) {
-                padding: 10px;
-            } 
+            .features .row .col-3 {
+                padding: 30px;
+            }
+
+            .features .col-3 .title {
+                padding: 30px 0;
+                font-size: 20px;
+            }
 
         /* STYLE stories */
 
-            .stories h1 {
+            .stories .title {
                 font-size: 50px;
-                padding: 50px 0;
+                padding-bottom: 50px;
+                padding-right: 25%;
             }
 
             section.stories {
-                padding-bottom: 50px;
+                padding: 50px 0;
             }
 
         /* STYLE team */
 
+            section.team {
+                padding-bottom: 0;
+            }
+            
             .container.team {
                 width: 100%;
             }
@@ -330,24 +337,56 @@ x
                 justify-content: center;
             }
 
-            .team .row .left img,
-            .team .row .right img {
-                width: 50%;
+            .team .col-3.center {
+                background-color: beige;
+                padding: 25px;
+            }
+
+            .team .row .center .title .big {
+                font-size: 50px;
+            }
+
+            .team .row .center >*:not(.title) {
+                padding-top: 10px;
             }
 
             .team .left,
             .team .right {
                 flex-wrap: wrap;
-                color: white;
             }
 
-            .team .row .center h1 {
-                font-size: 50px;
-                padding-left: 10px;
+            .team .row .left img,
+            .team .row .right img {
+                width: 50%;
+                filter: invert(100%);
             }
 
-            .team .row .center >*:not(h1) {
-                padding: 10px;
+            .team .red {
+                background-color: red;
+            }
+            .team .purple {
+                background-color: purple;
+            }
+            .team .lightblue {
+                background-color: lightskyblue;
+            }
+            .team .superlightblue {
+                background-color: lightblue;
+            }
+            .team .bordeaux {
+                background-color: brown;
+            }
+            .team .blue {
+                background-color: blue;
+            }
+            .team .yellow {
+                background-color: yellow;
+            }
+            .team .green {
+                background-color: rgb(57, 156, 57);
+            }
+            .team .green img {
+                background-color: green;
             }
 
         /* STYLE calltoaction */
@@ -361,18 +400,18 @@ x
                 align-items: center;
             }
 
-            .container.calltoaction .row h1 {
+            .container.calltoaction .row .title {
                 font-size: 35px;
                 padding: 50px 0;
+                color: rgba(97,8,43,255);
             }
 
             .calltoaction button {
                 display: block;
-                padding: 10px;
-                height: 50px;
+                padding: 0.7em;
                 color: black;
                 background-color: rgb(222, 222, 231);
-                width: fit-content;
+                width: 30%;
             }
 
             /* STYLE faq */
@@ -381,23 +420,23 @@ x
                 flex-direction: column;
             }
             
-            .container.faq .row h1 {
+            .container.faq .row .title {
                 font-size: 35px;
                 padding: 50px 0;
             }
 
-            .container.faq .row div {
-                padding: 25px 0;
+            .container.faq .row .question {
+                padding-right: 25px;
                 justify-content: space-between;
                 border-top: solid grey 1px;
             }
 
-            .container.faq .row i {
-                line-height: 50px;
-                padding-right: 20px;
+            .container.faq .row i,
+            .container.faq .row .question span {
+                line-height: 70px;
             }
 
-            /* STYLE faq */
+            /* STYLE footer */
 
             footer {
                 background-color: rgba(0,0,0,255);
@@ -406,6 +445,7 @@ x
 
             footer .container {
                 width: 70vw;
+                padding: 30px 0;
             }
 
             footer .container .row {
@@ -413,9 +453,8 @@ x
                 flex-direction: column;
             }
 
-            footer .container .nav, 
-            footer .container .language {
-                padding: 20px;
+            footer .container .nav {
+                padding: 50px 0px;
             }
 
             footer .container .nav ul :first-child {
@@ -426,7 +465,17 @@ x
 
             footer .container .nav ul :not(:first-child) {
                 font-size: 14px;
-                padding-top: 10px;
+                padding-top: 15px;
+            }
+
+            footer .container .language {
+                width: fit-content;
+                padding-top: 20px;
+                border-top: solid grey 1px;
+            }
+
+            footer .container .language .globe {
+                padding-right: 10px;
             }
 
 
