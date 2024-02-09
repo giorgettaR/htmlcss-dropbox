@@ -384,10 +384,16 @@
             }
             .team .green {
                 background-color: rgb(57, 156, 57);
+                position: relative;
             }
-            .team .green img {
+            .team .green div.greener{
                 background-color: green;
+                position: absolute;
+                width: 90%;
+                align-self: center;
             }
+
+
 
         /* STYLE calltoaction */
 
