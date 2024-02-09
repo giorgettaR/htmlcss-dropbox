@@ -12,6 +12,10 @@
         padding: 0;
     }
 
+    a {
+        text-decoration: none;
+    }
+
 /* GENERAL SETTINGS */
 
     .flex {
@@ -104,7 +108,7 @@
         }
 
         main .container {
-            width: 70vw;
+            width: 65vw;
         }
 
         main section {
@@ -118,25 +122,27 @@
             }
 
             .container.hero {
-                width: 85vw;
-                padding-top: 20px;
+                width: 80vw;
+                /* padding-top: 20px; */
             }
 
             .container.hero >.row {
                 flex-direction: column;
             }
 
-            .hero h1 {
+            .hero .title {
                 font-size: 80px;
-                padding: 50px 0;
+                font-weight: bold;
+                padding-bottom: 50px;
             }
 
             .hero .text {
-                width: 40%;
+                justify-content: space-between;
+                flex-direction: column;
             }
 
-            .hero .text >:not(:first-child) {
-                margin-top: 20px;
+            .hero .text .hook {
+                padding-right: 20px;
             }
 
         /* STYLE offer */
@@ -146,23 +152,25 @@
                 flex-direction: column;
             }
 
-            .offer .row >h2 {
-                font-size: 50px;
-                padding: 50px 0;
+            .offer >.title {
+                font-size: 40px;
+                font-weight: bold;
+                padding-bottom: 50px;
             }
 
             .offer .radio {
-                padding: 10px 0;
+                padding: 20px 0;
             }
 
             .plans.flex {
                 align-items: stretch;
+                flex-wrap: wrap;
             }
 
             .offer .card {
                 display: flex;
                 flex-direction: column;
-                padding: 10px;
+                padding: 20px;
             }
 
             .offer .card >* {
@@ -174,44 +182,108 @@
                 text-align: center;
             }
 
-            .offer .card .main >*:not(.sharpened) {
-                padding: 7px 0;
+            .offer .card .info {
+                flex-grow: 2;
             }
 
-            .offer .card h1 {
+            .offer .card .info >*:not(.sharpened) {
+                padding: 20px 10px;
+            }
+
+            .offer .card .info .head {
+                line-height: 30px;
+            }
+
+            .offer .card .info .type {
                 font-size: 28px;
             }
 
-            .offer .card h2 {
-                font-size: 18px;
+            .offer .card .info .type,
+            .offer .card .info .price {
+                font-weight: bold;
             }
 
-            .offer .card .main button {
+            .offer .card .info .cadency {
+                color: grey;
+            }
+
+            .offer .card .info .fa-ul {
+                margin-left: 2em;
+            }
+
+            .offer .card .info .fa-ul li {
+                padding: 10px 0;
+            }
+
+            .offer .card .info .try {
+                width: 85%;
                 margin: auto;
             }
 
-            .offer .card .highlights ul {
-                list-style-type: circle;
-                list-style: inside;
+            .offer .card .info .buy {
+                padding: 30px 10px;
             }
 
-            .offer .enterprise .card .main {
+            .offer .plans .card .info hr {
+                width: 30%;
+                padding-left: 50px;
+                padding: 0;
+            }
+
+            .offer .plans .card .highlights div {
+                margin: 20px 0px;
+                font-weight: bold;
+            }
+
+            .offer .enterprise.card {
+                width: 100%;
+            }
+
+            .offer .enterprise.card .info {
+                line-height: 30px;
                 position: relative;
             }
 
-            .offer .enterprise .card button {
+            .offer .enterprise.card button {
                 position: absolute;
                 right: 20px;
                 top: 20px;
             }
 
-            .offer .partner .text {
-                padding: 15px;
+            .offer .partner {
+                padding-top: 150px;
             }
 
-            .offer .partner .text .div {
-                padding: 20px 0;
+            .offer .partner .text {
+                padding: 40px;
             }
+
+            .offer .partner .text .title {
+                font-size: 28px;
+            }
+
+            .offer .partner .text .hook {
+                padding: 30px 0;
+            }
+
+            .offer .partner .text button {
+                background-color: white;
+                color: black;
+                width: 50%;
+            }
+
+/* __________________________________________________________ */
+
+            
+
+
+
+
+x          
+
+            
+            
+            
 
         /* STYLE features */
 

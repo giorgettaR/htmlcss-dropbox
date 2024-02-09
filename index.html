@@ -6,25 +6,27 @@
     <title>DropBox</title>
     <script src="https://kit.fontawesome.com/0b0b1c9877.js" crossorigin="anonymous"></script>
 </head>
-<body class="ebug">
+<body class="debug">
     
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-50 left flex">
-                    <div class="logo">
-                        <img src="./img/logo-small.png" alt="">
-                    </div>
-                    <span>Perchè DropBox</span>
-                    <span>Funzioni</span>
-                    <span>Piani e Prezzi</span>
-                </div>
-                <div class="col-50 right flex">
-                    <span>Supporto</span>
-                    <span>Contatta lufficio vendite</span>
-                    <span>Accedi</span>
-                    <span class="sharpened">Inizia</span>
-                </div>
+                <ul class="col-50 left flex">
+                    <il class="logo">
+                        <a href="">
+                            <img src="./img/logo-small.png" alt="">
+                        </a>
+                    </il>
+                    <li><a href="#">Perchè DropBox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e Prezzi</a></li>
+                </ul>
+                <ul class="col-50 right flex">
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Contatta lufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><button class="sharpened">Inizia</button></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -33,10 +35,10 @@
         <section class="hero">
             <div class="container hero">
                 <div class="row">
-                    <h1>Tutto ciò che ti serve per il tuo lavoro, in un unico posto</h1>
+                    <div class="title">Tutto ciò che ti serve per il tuo lavoro, in un unico posto</div>
                     <div class="flex">
-                        <div class="col-40 text">
-                            <span>
+                        <div class="col-40 text flex">
+                            <span class="hook">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia, odio numquam possimus facilis, ducimus corrupti modi nesciunt animi dolorem excepturi in doloribus reprehenderit aspernatur temporibus tempora aliquid error eaque?
                             </span>
                             <span class="sharpened">Inizia la tua prova gratuita</span>
@@ -53,11 +55,11 @@
         <section class="offer">
             <div class="container offer">
                 <div class="row">
-                    <h2>Trova il piano business che fa per te</h2>
+                    <div class="title">Trova il piano business che fa per te</div>
                     <div class="radio">
-                        <input type="radio" id="Fatturazione mensile">
+                        <input type="radio" name="offer">
                         <label for="Fatturazione mensile">Fatturazione mensile</label>
-                        <input type="radio" id="Fatturazione aanuale">
+                        <input type="radio" name="offer">
                         <label for="Fatturazione annuale">Fatturazione annuale</label>
                     </div>
                     <div class="plans flex">
@@ -65,84 +67,141 @@
                             <div class="target">
                                 <i class="fa-solid fa-user"></i> Singolo
                             </div>
-                            <div class="main">
-                                <h1>Professional</h1>
-                                <h2>€ 12.00</h2>
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i> 1 utente<br></li>
-                                    <li></li><i class="fa-solid fa-file"></i> 5TB di spazio di archiviazione sicuro<br></li>
-                                    <li></li><i class="fa-solid fa-circle-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            <div class="info">
+                                <div class="head">
+                                    <span class="type">Professional</span><br>
+                                    <span class="price">€ 12.00</span><br>
+                                    <span class="cadency">/mese</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-user"></i></span>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-file"></i></span>
+                                        5TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-circle-nodes"></i></span>
+                                        Funzioni di produttività premium e condivisione file semplice e sicura
+                                    </li>
                                 </ul>
-                                <button class="sharpened">Prova gratis per 30 giorni</button>
-                                oppure <a href="">acquista ora</a>
-                            </div>
-                            <div class="highlights">
-                                <h2>Punti Salienti del piano</h2>
-                                <ul>
-                                    <li>Invia file fino a 100 GB con Dropbox Transfert</li>
-                                    <li>Cartelle offline su dispositivi mobili</li>
-                                </ul>
-                            </div>
+                                <button class="sharpened try">Prova gratis per 30 giorni</button>
+                                <div class="buy">oppure <a href="">acquista ora</a></div>
+                                <hr>
+                                <div class="highlights">
+                                    <div>Punti Salienti del piano</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Invia file fino a 100 GB con Dropbox Transfert</li>
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
                         </div>
                         <div class="col-3 card">
                             <div class="target">
                                 <i class="fa-solid fa-user"></i> Singolo
                             </div>
-                            <div class="main">
-                                <h1>Professional</h1>
-                                <h2>€ 12.00</h2>
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i> 1 utente<br></li>
-                                    <li></li><i class="fa-solid fa-file"></i> 5TB di spazio di archiviazione sicuro<br></li>
-                                    <li></li><i class="fa-solid fa-circle-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            <div class="info">
+                                <div class="head">
+                                    <span class="type">Professional</span><br>
+                                    <span class="price">€ 12.00</span><br>
+                                    <span class="cadency">/mese</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-user"></i></span>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-file"></i></span>
+                                        5TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-circle-nodes"></i></span>
+                                        Funzioni di produttività premium e condivisione file semplice e sicura
+                                    </li>
                                 </ul>
-                                <button class="sharpened">Prova gratis per 30 giorni</button>
-                                oppure <a href="">acquista ora</a>
-                            </div>
-                            <div class="highlights">
-                                <h2>Punti Salienti del piano</h2>
-                                <ul>
-                                    <li>Invia file fino a 100 GB con Dropbox Transfert</li>
-                                    <li>Cartelle offline su dispositivi mobili</li>
-                                    <li>Cartelle offline su dispositivi mobili</li>
-                                    <li>Cartelle offline su dispositivi mobili</li>
-                                    <li>Cartelle offline su dispositivi mobili</li>
-                                </ul>
-                            </div>
+                                <button class="sharpened try">Prova gratis per 30 giorni</button>
+                                <div class="buy">oppure <a href="">acquista ora</a></div>
+                                <hr>
+                                <div class="highlights">
+                                    <div>Punti Salienti del piano</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Invia file fino a 100 GB con Dropbox Transfert</li>
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
                         </div>
                         <div class="col-3 card">
                             <div class="target">
                                 <i class="fa-solid fa-user"></i> Singolo
                             </div>
-                            <div class="main">
-                                <h1>Professional</h1>
-                                <h2>€ 12.00</h2>
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i> 1 utente<br></li>
-                                    <li></li><i class="fa-solid fa-file"></i> 5TB di spazio di archiviazione sicuro<br></li>
-                                    <li></li><i class="fa-solid fa-circle-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            <div class="info">
+                                <div class="head">
+                                    <span class="type">Professional</span><br>
+                                    <span class="price">€ 12.00</span><br>
+                                    <span class="cadency">/mese</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-user"></i></span>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-file"></i></span>
+                                        5TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fa-solid fa-circle-nodes"></i></span>
+                                        Funzioni di produttività premium e condivisione file semplice e sicura
+                                    </li>
                                 </ul>
-                                <button class="sharpened">Prova gratis per 30 giorni</button>
-                                oppure <a href="">acquista ora</a>
-                            </div>
-                            <div class="highlights">
-                                <h2>Punti Salienti del piano</h2>
-                                <ul>
-                                    <li>Invia file fino a 100 GB con Dropbox Transfert</li>
-                                    <li>Cartelle offline su dispositivi mobili</li>
-                                </ul>
-                            </div>
+                                <button class="sharpened try">Prova gratis per 30 giorni</button>
+                                <div class="buy">oppure <a href="">acquista ora</a></div>
+                                <hr>
+                                <div class="highlights">
+                                    <div>Punti Salienti del piano</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Invia file fino a 100 GB con Dropbox Transfert</li>
+                                        <li>
+                                            <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
-                    <div class="enterprise">
-                        <div class="card">
+                        <div class="enterprise card">
                             <div class="target">
                                 <i class="fa-solid fa-building"></i> Team
                             </div>
-                            <div class="main">
-                                <h1>Enterprise</h1>
-                                <h2>Contatta l'ufficio vendite per i prezzi</h2>
-                                <button class="sharpened">Prova gratis per 30 giorni</button>
+                            <div class="info">
+                                <span class="type">Enterprise</span><br>
+                                <span class="price">Contatta l'ufficio vendite per i prezzi</span><br>
+                                <button class="sharpened">Contatta l'ufficio vendite</button>
                                 <span>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</span>
                             </div>
                         </div>
@@ -152,9 +211,9 @@
                             <img src="./img/partner.png" alt="">
                         </div>
                         <div class="col-40 text">
-                            <h1> Entrai Contatto con un partner Dropbox</h1>
-                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex beatae impedit quam commodi ratione adipisci dolore laborum enim non assumenda. Iure, omnis magni amet vel nostrum distinctio sapiente explicabo tempora.</div>
-                            <button>Trova un Partner</button>
+                            <div class="title"> Entrai Contatto con un partner Dropbox</div>
+                            <div class="hook">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex beatae impedit quam commodi ratione adipisci dolore laborum enim non assumenda. Iure, omnis magni amet vel nostrum distinctio sapiente explicabo tempora.</div>
+                            <button class="sharpened">Trova un Partner</button>
                         </div>
                     </div>
                 </div>
