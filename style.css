@@ -97,7 +97,7 @@ img {
 
     header .left >*,
     header .right >:not(.sharpened) {
-        padding: 2px;
+        padding: 0 10px;
     }
 
     header .left,
