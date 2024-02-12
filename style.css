@@ -72,7 +72,7 @@
         display: block;
         padding: 0.5em 0.5em;
         color: white;
-        background-color: blue;
+        background-color: rgba(0,97,255,255);
         width: fit-content;
     }
 
@@ -181,16 +181,24 @@
                     padding: 20px;
                 }
 
-                .offer .card >* {
-                    border: solid grey 1px;
+                .offer .card .target,
+                .offer .card .info {
+                    border-left: solid grey 1px;
+                    border-right: solid grey 1px;
                     padding: 15px;
+                }
+
+                .offer .card .info {
+                    border-top: solid grey 1px;
                 }
 
                 .offer .card .target {
                     text-align: center;
+                    border-top: solid grey 1px;
                 }
 
                 .offer .card .info {
+                    border-bottom: solid grey 1px;
                     flex-grow: 2;
                 }
 
@@ -234,13 +242,21 @@
 
                 .offer .plans .card .info hr {
                     width: 30%;
-                    padding-left: 50px;
                     padding: 0;
+                    border-top: 0.5px solid grey;
+
                 }
 
                 .offer .plans .card .highlights div {
                     margin: 20px 0px;
                     font-weight: bold;
+                }
+
+                .offer .plans .card .highlights ul ::marker {
+                        content: '\2713   ';
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        color: green;
                 }
 
                 .offer .enterprise.card {
