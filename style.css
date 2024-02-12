@@ -48,9 +48,9 @@
         width: calc(100% / 3);
     }
 
-    .col-5 {
+    /* .col-5 {
         width: calc(100% / 5);
-    }
+    } */
 
     .col-30 {
         width: 30%;
@@ -66,6 +66,10 @@
 
     .col-60 {
         width: 60%;
+    }
+
+    .col-fit {
+        width: fit-content;
     }
 
     .sharpened {
@@ -477,6 +481,7 @@
 
             footer .container .nav {
                 padding: 50px 0px;
+                justify-content: space-between;
             }
 
             footer .container .nav ul :first-child {
