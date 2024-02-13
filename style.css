@@ -562,17 +562,19 @@ button.white:hover {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.fade-in {
-	animation-name: fade-in;
+.title-fade-in {
+	animation-name: title-fade-in;
 	animation-duration: 2s;
 }
 
-@keyframes fade-in {
+@keyframes title-fade-in {
 	0% {
 		opacity: 0;
 		font-size: 1px;
+        width: 0%;
 	}
 	100% {
+        width: 100%;
 		opacity: 1;
         font-size: 80px;
 	}
