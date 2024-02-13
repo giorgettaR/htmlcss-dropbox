@@ -14,12 +14,7 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-button {
-    background-color: inherit;
     color: inherit;
-    border-style: none;
 }
 
 /* GENERAL SETTINGS ------------------------------------------------------------*/
@@ -55,6 +50,10 @@ body {
     font-weight: bold;
 }
 
+.col-full {
+    width: 100%;
+}
+
 .col-3 {
     width: calc(100% / 3);
 }
@@ -79,31 +78,18 @@ body {
     width: fit-content;
 }
 
-
-a:link {
-    color: inherit;
-}
-
-a:visited {
-    color: inherit;
-}
-
-a:hover {
-    color: blue;
-}
-
-a:active {
-    color: purple;
-}
-
-
 .sharpened {
-    padding: 0.7em 0.7em;
-    color: white;
     background-color: rgba(0,97,255,255);
+    border: solid blue 1px;
+    color: white;
+}
+
+.button {
+    text-align: center;
+    padding: 0.7em 0.7em;
     width: fit-content;
     transition: all 0.5s ease 0s;
-    border: solid blue 1px;
+    display: inline-block;
 }
 
 
@@ -167,12 +153,14 @@ a:active {
         }
 
         .container.hero >.row {
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         .hero .title {
             font-size: 80px;
             padding-bottom: 50px;
+            width: 100%;
         }
 
         .hero .text {
@@ -307,7 +295,7 @@ a:active {
                 position: relative;
             }
 
-            .offer .enterprise.card button {
+            .offer .enterprise.card .button {
                 position: absolute;
                 right: 20px;
                 top: 20px;
@@ -331,8 +319,8 @@ a:active {
                 padding: 30px 0;
             }
 
-            .offer .partner .text button {
-                width: 50%;
+            .offer .partner .text .button {
+                width: 70%;
                 padding: 1em 1em;
                 border: white solid 1px;
             }
@@ -348,15 +336,15 @@ a:active {
             flex-wrap: wrap;
         }
 
-        .features .row >* {
+        .features .row >.feature {
             flex-direction: column;
         }
 
-        .features .row .col-3 {
+        .features .row .feature {
             padding: 30px;
         }
 
-        .features .col-3 .title {
+        .features .feature .title {
             padding: 30px 0;
             font-size: 20px;
         }
@@ -469,7 +457,7 @@ a:active {
             color: rgba(97,8,43,255);
         }
 
-        .calltoaction button {
+        .calltoaction .button {
             display: block;
             padding: 0.7em;
             color: black;
@@ -546,39 +534,98 @@ a:active {
 
 /* ANIMASTIONS ------------------------------------------------------------*/
 
-button.sharpened:hover {
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: purple;
+}
+
+.button.sharpened:hover {
     background-color: lightblue;
     color: blue;
     border: solid 1px;
 }
 
-button.white:hover {
+.button.white:hover {
     background-color: black;
     color: white;
     border: solid 1px;
 }
 
-*>button:active {
+*>.button:active {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.title-fade-in {
-	animation-name: title-fade-in;
-	animation-duration: 2s;
+.title-fade-in :nth-child(1) {
+	animation-name: fade-in-1of4;
+	animation-duration: 3s;
 }
 
-@keyframes title-fade-in {
+@keyframes fade-in-1of4 {
 	0% {
 		opacity: 0;
-		font-size: 1px;
-        width: 0%;
 	}
-	100% {
-        width: 100%;
+    25% {
 		opacity: 1;
-        font-size: 80px;
+	}
+    100% {
+		opacity: 1;
 	}
 }
+
+.title-fade-in :nth-child(2) {
+	animation-name: fade-in-2of4;
+	animation-duration: 3s;
+}
+
+@keyframes fade-in-2of4 {
+	0% {
+		opacity: 0;
+	}
+    25% {
+		opacity: 0;
+	}
+    50% {
+		opacity: 1;
+	}
+}
+
+.title-fade-in :nth-child(3) {
+	animation-name: fade-in-3of4;
+	animation-duration: 3s;
+}
+
+@keyframes fade-in-3of4 {
+	0% {
+		opacity: 0;
+	}
+    50% {
+		opacity: 0;
+	}
+    75% {
+		opacity: 1;
+	}
+}
+
+.title-fade-in :nth-child(4) {
+	animation-name: fade-in-odd;
+	animation-duration: 3s;
+}
+
+@keyframes fade-in-odd {
+	0% {
+		opacity: 0;
+	}
+    75% {
+		opacity: 0;
+	}
+    100% {
+		opacity: 1;
+	}
+}
+
 
 .slide-in-left {
 	animation-name: slide-in-left;
