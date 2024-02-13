@@ -46,6 +46,11 @@ img {
 
 /* STYLE ------------------------------------------------------------*/
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
 .title {
     font-weight: bold;
 }
@@ -74,6 +79,24 @@ img {
     width: fit-content;
 }
 
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: purple;
+}
+
+
 .sharpened {
     padding: 0.7em 0.7em;
     color: white;
@@ -87,7 +110,7 @@ img {
 /* STYLE HEADER ------------------------------------------------------------*/
 
     header .container {
-        height: 60px;
+        height: 80px;
         width: 100%;
         padding: 0 10px;
     }
@@ -104,6 +127,7 @@ img {
     header .left,
     header .right {
         align-items: center;
+        color: black;
     }
 
     header .right {
@@ -135,10 +159,11 @@ img {
 
         section.hero {
             background-color: rgba(180,208,231,255);
+            padding: 80px 0;
         }
 
         .container.hero {
-            width: 80vw;
+            width: 90vw;
         }
 
         .container.hero >.row {
@@ -535,6 +560,54 @@ button.white:hover {
 
 *>button:active {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.fade-in {
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		font-size: 1px;
+	}
+	100% {
+		opacity: 1;
+        font-size: 80px;
+	}
+}
+
+.slide-in-left {
+	animation-name: slide-in-left;
+	animation-duration: 2s;
+}
+
+@keyframes slide-in-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.slide-in-right {
+	animation-name: slide-in-right;
+	animation-duration: 2s;
+}
+
+@keyframes slide-in-right {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .pulse {
