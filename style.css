@@ -33,6 +33,14 @@ a {
     flex-direction: row;
 }
 
+.row:not(.no-gutter) {
+    margin: 0 -20px;
+}
+
+.row:not(.no-gutter) >* {
+    padding: 0 20px;
+}
+
 img {
     display: block;
     margin: auto;
@@ -44,7 +52,6 @@ img {
 body {
 	font-family: 'Open Sans', sans-serif;
 }
-
 
 .title {
     font-weight: bold;
@@ -92,7 +99,6 @@ body {
     display: inline-block;
 }
 
-
 /* STYLE HEADER ------------------------------------------------------------*/
 
     header .container {
@@ -106,7 +112,7 @@ body {
     }
 
     header .left >*,
-    header .right >:not(.sharpened) {
+    header .right >:not(.button) {
         padding: 0 10px;
     }
 
@@ -130,7 +136,6 @@ body {
 
     main .container >.row {
         width: 100%;
-        margin: 0 auto;
     }
 
     main .container {
@@ -168,12 +173,16 @@ body {
             flex-direction: column;
         }
 
-        .hero .text .hook {
-            padding-right: 20px;
+        .hero .text >*:not(.hook) {
+            margin-top: 15px;
         }
 
-        .hero .text i {
+        .hero .text .arrow {
             align-self: center;
+        }
+        
+        .hero img {
+            margin-bottom: -200px;
         }
 
 
@@ -181,25 +190,26 @@ body {
 
         .container.offer >.row {
             width: 100%;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: stretch;
+            flex-wrap: wrap;
+            align-self: end;
+        }
+
+        section.offer {
+            padding-top: 100px;
         }
 
         .offer .row >.title {
             font-size: 40px;
         }
 
-        .offer .radio {
-            padding: 20px 0;
+        .offer .row .title,
+        .offer .row .radio {
+            padding: 20px 20px;
         }
 
-        .plans.flex {
-            align-items: stretch;
-            flex-wrap: wrap;
-            width: calc(100% + 20px);
-            align-self: end;
-        }
-
-        /* STYLE plans ------------------------------------------------------------*/
+        /* STYLE cards ------------------------------------------------------------*/
 
             .offer .card {
                 display: flex;
@@ -228,7 +238,7 @@ body {
                 flex-grow: 2;
             }
 
-            .offer .card .info >*:not(.sharpened) {
+            .offer .card .info >*:not(.button,.divider) {
                 padding: 20px 10px;
             }
 
@@ -267,35 +277,34 @@ body {
                 padding: 30px 10px;
             }
 
-            .offer .plans .card .info hr {
+            .offer .card .info .divider {
                 width: 30%;
-                padding: 0;
                 border-top: 0.5px solid grey;
-
+                margin-left: 10px;
             }
 
-            .offer .plans .card .highlights div {
+            .offer .card .highlights div {
                 margin: 20px 0px;
                 font-weight: bold;
             }
 
-            .offer .plans .card .highlights ul ::marker {
-                    content: '\2713   ';
-                    font-size: 1.2em;
-                    font-weight: bold;
-                    color: green;
+            .offer .card .highlights ul ::marker {
+                content: '\2713   ';
+                font-size: 1.2em;
+                font-weight: bold;
+                color: green;
             }
 
             .offer .enterprise.card {
                 width: 100%;
             }
 
-            .offer .enterprise.card .info {
+            .offer .card.enterprise .info {
                 line-height: 30px;
                 position: relative;
             }
 
-            .offer .enterprise.card .button {
+            .offer .card.enterprise .button {
                 position: absolute;
                 right: 20px;
                 top: 20px;
@@ -338,10 +347,6 @@ body {
 
         .features .row >.feature {
             flex-direction: column;
-        }
-
-        .features .row .feature {
-            padding: 30px;
         }
 
         .features .feature .title {
@@ -387,12 +392,12 @@ body {
             padding: 25px;
         }
 
-        .team .row .center .title .big {
-            font-size: 50px;
+        .team .row .center .logo {
+            width: 50%;
         }
 
-        .team .row .center >*:not(.title) {
-            padding-top: 10px;
+        .team .row .center >*:not(.logo) {
+            padding-top: 30px;
         }
 
         .team .left,
@@ -428,36 +433,31 @@ body {
             background-color: yellow;
         }
         .team .green {
-            background-color: rgb(57, 156, 57);
-            position: relative;
-        }
-        .team .green div.greener{
             background-color: green;
-            position: absolute;
-            width: 90%;
-            align-self: center;
+            border: 10px solid rgb(57, 156, 57);
         }
+    
 
 
 
-    /* STYLE calltoaction ------------------------------------------------------------*/
+    /* STYLE call-to-action ------------------------------------------------------------*/
 
-        section.calltoaction {
+        section.call-to-action {
             background-color: rgba(180,208,231,255);
         }
 
-        .container.calltoaction .row {
+        .container.call-to-action .row {
             justify-content: space-between;
             align-items: center;
         }
 
-        .container.calltoaction .row .title {
+        .container.call-to-action .row .title {
             font-size: 35px;
             padding: 50px 0;
             color: rgba(97,8,43,255);
         }
 
-        .calltoaction .button {
+        .call-to-action .button {
             display: block;
             padding: 0.7em;
             color: black;
